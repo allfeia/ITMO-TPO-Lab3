@@ -13,6 +13,7 @@ dependencies {
     testImplementation(kotlin("test"))
 
     implementation("org.seleniumhq.selenium:selenium-java:4.18.1")
+    testImplementation("org.junit.jupiter:junit-jupiter:5.10.2")
 
 }
 
