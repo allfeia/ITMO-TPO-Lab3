@@ -13,9 +13,9 @@ open class BaseTest {
 //        driver = ChromeDriver()
          driver = FirefoxDriver()
 
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10))
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20))
         driver.manage().window().maximize()
-        driver.get("http://www.bongacams.com/")
+        driver.get("https://ru14.bongacams.com/continue-18-plus")
     }
 
     @AfterEach

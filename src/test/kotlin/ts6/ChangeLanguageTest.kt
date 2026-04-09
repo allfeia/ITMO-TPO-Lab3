@@ -21,14 +21,9 @@ class ChangeLanguageTest : BaseTest(){
     }
 
     private fun changeLanguage(lang: String): String {
-        val options = ChromeOptions()
-        options.addArguments("--start-maximized")
-
-        val driver = ChromeDriver(options)
         val wait = WebDriverWait(driver, Duration.ofSeconds(20))
 
         try {
-            driver.get("https://ru14.bongacams.com/continue-18-plus")
 
             // открыть панель с языками
             val langDiv = wait.until(ExpectedConditions.elementToBeClickable(
