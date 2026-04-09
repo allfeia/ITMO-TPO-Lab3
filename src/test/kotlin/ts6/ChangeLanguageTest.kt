@@ -1,3 +1,6 @@
+package ts6
+
+import BaseTest
 import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.params.ParameterizedTest
 import org.junit.jupiter.params.provider.ValueSource
@@ -9,7 +12,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions
 import org.openqa.selenium.support.ui.WebDriverWait
 import java.time.Duration
 
-class ChangeLanguageTest {
+class ChangeLanguageTest : BaseTest(){
 
     @ParameterizedTest
     @ValueSource(strings = ["es", "ru", "lt", "pl", "fi"])
