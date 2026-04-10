@@ -1,11 +1,12 @@
 package ts7
 
 import BaseTest
+import Browser
 import org.openqa.selenium.By
 import kotlin.test.Test
 import kotlin.test.assertTrue
 
-class ContactWrongData : BaseTest() {
+class ContactWrongData(browser: Browser) : BaseTest(browser) {
 //    @Test
 //    fun testInvalidDisplayName() {
 //        driver.findElement(By.xpath("//a[@href='/account']")).click()

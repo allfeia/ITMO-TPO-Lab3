@@ -1,11 +1,12 @@
 package ts7
 
 import BaseTest
+import Browser
 import org.junit.jupiter.api.Test
 import org.openqa.selenium.By
 import kotlin.test.assertTrue
 
-class ContactCorrectData : BaseTest() {
+class ContactCorrectData(browser: Browser) : BaseTest(browser) {
 //    @Test
 //    fun testValidContactData() {
 //        // Переход в аккаунт
