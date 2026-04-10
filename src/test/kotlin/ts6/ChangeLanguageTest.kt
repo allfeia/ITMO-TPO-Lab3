@@ -29,10 +29,9 @@ abstract class ChangeLanguageTest(browser: Browser) : BaseTest(browser){
         Actions(driver).moveToElement(langDiv).perform()
 
         // выбор языка
-        val newLang = wait.until(ExpectedConditions.elementToBeClickable(
+        wait.until(ExpectedConditions.elementToBeClickable(
             By.xpath("//a[@data-lang='$lang']")
-        ))
-        newLang.click()
+        )).click()
 
         return driver.currentUrl
     }

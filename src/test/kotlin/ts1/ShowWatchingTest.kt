@@ -17,10 +17,9 @@ abstract class ShowWatchingTest(browser: Browser) : BaseTest(browser) {
         val wait = WebDriverWait(driver, Duration.ofSeconds(20))
 
         // нажать на модель
-        val model = wait.until(ExpectedConditions.elementToBeClickable(
+        wait.until(ExpectedConditions.elementToBeClickable(
             By.xpath("//a[contains(@class,'lst_link')]")
-        ))
-        model.click()
+        )).click()
 
         //проверяем, что отобразилось видео и чат
         assertAll(
