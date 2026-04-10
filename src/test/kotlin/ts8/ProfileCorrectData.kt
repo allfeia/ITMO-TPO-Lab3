@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test
 import org.openqa.selenium.By
 import kotlin.test.assertTrue
 
-class ProfileCorrectData(browser: Browser) : BaseTest(browser) {
+abstract class ProfileCorrectData(browser: Browser) : BaseTest(browser) {
 //    @Test
 //    fun testValidProfileInfo() {
 //        driver.findElement(By.xpath("//a[@href='/profile']")).click()

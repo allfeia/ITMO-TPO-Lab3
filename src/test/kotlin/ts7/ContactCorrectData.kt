@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test
 import org.openqa.selenium.By
 import kotlin.test.assertTrue
 
-class ContactCorrectData(browser: Browser) : BaseTest(browser) {
+abstract class ContactCorrectData(browser: Browser) : BaseTest(browser) {
 //    @Test
 //    fun testValidContactData() {
 //        // Переход в аккаунт
