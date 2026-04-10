@@ -1,11 +1,12 @@
 package ts8
 
 import BaseTest
+import Browser
 import org.junit.jupiter.api.Test
 import org.openqa.selenium.By
 import kotlin.test.assertTrue
 
-class ProfileWrongData : BaseTest() {
+class ProfileWrongData(browser: Browser) : BaseTest(browser) {
 //    @Test
 //    fun testInvalidProfileInfo() {
 //        driver.findElement(By.xpath("//a[@href='/profile']")).click()
