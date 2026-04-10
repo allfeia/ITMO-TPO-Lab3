@@ -4,14 +4,20 @@ import org.openqa.selenium.WebDriver
 import org.openqa.selenium.chrome.ChromeDriver
 import org.openqa.selenium.firefox.FirefoxDriver
 import java.time.Duration
+enum class Browser {
+    CHROME,
+    FIREFOX
+}
 
-open class BaseTest {
+open class BaseTest(private val browser: Browser) {
     lateinit var driver: WebDriver
 
     @BeforeEach
     fun setUp() {
-//        driver = ChromeDriver()
-         driver = FirefoxDriver()
+        driver = when (browser) {
+            Browser.CHROME -> ChromeDriver()
+            Browser.FIREFOX -> FirefoxDriver()
+        }
 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20))
         driver.manage().window().maximize()
