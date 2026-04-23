@@ -1,10 +1,7 @@
-package ts7
+package ts16
 
 import BaseTest
 import Browser
-import org.junit.jupiter.api.Test
-import org.openqa.selenium.By
-import kotlin.test.assertTrue
 
 abstract class ContactCorrectData(browser: Browser) : BaseTest(browser) {
 //    @Test

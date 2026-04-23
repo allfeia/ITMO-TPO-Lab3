@@ -1,4 +1,4 @@
-package ts6
+package ts15
 
 import BaseTest
 import Browser
