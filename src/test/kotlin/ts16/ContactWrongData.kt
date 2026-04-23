@@ -1,10 +1,7 @@
-package ts7
+package ts16
 
 import BaseTest
 import Browser
-import org.openqa.selenium.By
-import kotlin.test.Test
-import kotlin.test.assertTrue
 
 abstract class ContactWrongData(browser: Browser) : BaseTest(browser) {
 //    @Test

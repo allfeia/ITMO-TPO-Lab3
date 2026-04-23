@@ -1,10 +1,7 @@
-package ts8
+package ts17
 
 import BaseTest
 import Browser
-import org.junit.jupiter.api.Test
-import org.openqa.selenium.By
-import kotlin.test.assertTrue
 
 abstract class ProfileWrongData(browser: Browser) : BaseTest(browser) {
 //    @Test
