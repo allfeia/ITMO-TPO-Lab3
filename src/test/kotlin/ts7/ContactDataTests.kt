@@ -1,4 +1,4 @@
-package ts16
+package ts7
 
 import Browser;
 import org.junit.platform.suite.api.SelectClasses

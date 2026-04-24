@@ -1,4 +1,4 @@
-package ts1
+package ts2
 
 import BaseTest
 import Browser

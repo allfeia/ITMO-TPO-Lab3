@@ -1,4 +1,4 @@
-package ts17
+package ts8
 
 import BaseTest
 import Browser
